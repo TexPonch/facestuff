@@ -1,0 +1,29 @@
+Using TensorFlow backend.
+/home/pi/LockerPIvm/lib/python3.5/importlib/_bootstrap.py:222: RuntimeWarning: compiletime version 3.4 of module 'tensorflow.python.framework.fast_tensor_util' does not match runtime version 3.5
+  return f(*args, **kwds)
+/home/pi/LockerPIvm/lib/python3.5/importlib/_bootstrap.py:222: RuntimeWarning: builtins.type size changed, may indicate binary incompatibility. Expected 432, got 412
+  return f(*args, **kwds)
+RuntimeError: module compiled against API version 0xc but this version of numpy is 0xb
+RuntimeError: module compiled against API version 0xc but this version of numpy is 0xb
+Traceback (most recent call last):
+  File "facenet.py", line 1, in <module>
+    from keras import backend as K
+  File "/home/pi/LockerPIvm/lib/python3.5/site-packages/keras/__init__.py", line 3, in <module>
+    from . import utils
+  File "/home/pi/LockerPIvm/lib/python3.5/site-packages/keras/utils/__init__.py", line 25, in <module>
+    from .multi_gpu_utils import multi_gpu_model
+  File "/home/pi/LockerPIvm/lib/python3.5/site-packages/keras/utils/multi_gpu_utils.py", line 7, in <module>
+    from ..layers.merge import concatenate
+  File "/home/pi/LockerPIvm/lib/python3.5/site-packages/keras/layers/__init__.py", line 4, in <module>
+    from ..engine.base_layer import Layer
+  File "/home/pi/LockerPIvm/lib/python3.5/site-packages/keras/engine/__init__.py", line 8, in <module>
+    from .training import Model
+  File "/home/pi/LockerPIvm/lib/python3.5/site-packages/keras/engine/training.py", line 21, in <module>
+    from . import training_arrays
+  File "/home/pi/LockerPIvm/lib/python3.5/site-packages/keras/engine/training_arrays.py", line 8, in <module>
+    from scipy.sparse import issparse
+  File "/home/pi/LockerPIvm/lib/python3.5/site-packages/scipy/sparse/__init__.py", line 229, in <module>
+    from .csr import *
+  File "/home/pi/LockerPIvm/lib/python3.5/site-packages/scipy/sparse/csr.py", line 15, in <module>
+    from ._sparsetools import csr_tocsc, csr_tobsr, csr_count_blocks, \
+ImportError: numpy.core.multiarray failed to import
